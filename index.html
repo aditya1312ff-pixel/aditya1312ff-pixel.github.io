@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aditya's Dashboards</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  body {
+    background: linear-gradient(135deg, #0e1420 0%, #161d2b 100%);
+    color: #e6ecf5; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    padding: 24px;
+  }
+  .wrap { max-width: 900px; width: 100%; }
+  h1 {
+    font-size: 1.8rem; font-weight: 700; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .sub { color: #7c8aa0; font-size: 0.85rem; margin-bottom: 32px; }
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  a.card {
+    background: #161d2b; border: 1px solid #232d42; border-radius: 14px;
+    padding: 24px; text-decoration: none; color: inherit;
+    transition: all 0.2s; display: block;
+  }
+  a.card:hover {
+    border-color: #e8a33d; transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(232,163,61,0.15);
+  }
+  .card .icon {
+    font-size: 2rem; margin-bottom: 12px; display: block;
+  }
+  .card h2 { font-size: 1.1rem; font-weight: 700; margin-bottom: 6px; color: #fff; }
+  .card p { font-size: 0.8rem; color: #7c8aa0; line-height: 1.5; }
+  .card .arrow {
+    margin-top: 16px; font-size: 0.75rem; color: #e8a33d;
+    font-weight: 600; letter-spacing: 0.5px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📊 Aditya's Dashboards</h1>
+    <p class="sub">Personal analytics & market tools</p>
+    <div class="grid">
+
+      <a class="card" href="/metals-dashboard/">
+        <span class="icon">🪙</span>
+        <h2>Non-Ferrous Metals Dashboard</h2>
+        <p>LME / MCX prices, Cash–3M spreads, SBI TT vs USDINR, correlations, seasonality, and quant sentiment.</p>
+        <div class="arrow">OPEN →</div>
+      </a>
+
+      <a class="card" href="/hedge-book/">
+        <span class="icon">📘</span>
+        <h2>Hedge Book</h2>
+        <p>Hedge positions, exposure tracking, and risk analytics.</p>
+        <div class="arrow">OPEN →</div>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
